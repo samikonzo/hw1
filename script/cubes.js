@@ -3,7 +3,7 @@ var l = console.log;
 
 var cubesLis = document.querySelectorAll('#cubes > ul > li');
 
-/*
+
 
 setTimeout( function f(){
 	var count = Math.round(Math.random() * cubesLis.length);
@@ -24,4 +24,3 @@ setTimeout( function f(){
 	setTimeout(f, 5000);
 }, 500)
 
-*/
