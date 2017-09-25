@@ -1,0 +1,139 @@
+main{
+	width: 100%;
+	height: 600px;
+	/*outline: 1px solid red;*/
+}
+
+/*begin cubes*/
+#cubes{
+	width: 800px;
+	margin: 174px auto;
+	background: url(images/cubes/background.gif) no-repeat;
+
+	 display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+
+#cubes > ul {
+	list-style-type: none;
+	font-size: 0;
+	width: 612px;
+	height: 400px;
+	margin: auto;
+	padding: 0;
+	box-shadow: 3px 3px 100px 10px;
+}
+
+#cubes > ul > li {
+	display: inline-block;
+	position: relative;
+	width: 204px;
+	height: 204px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#cubes > ul > li:nth-child(2), /* mb shadow is result of convert*/
+#cubes > ul > li:nth-child(5){
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+#cubes > ul > li > .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+
+#cubes > ul > li:not(.today) > .icon{
+	height: 50%;
+}
+
+
+#cubes > ul > li .info{
+	position: absolute;
+	bottom: 37px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	color: white;
+	text-align: center;
+}
+
+#cubes > ul > li .today{
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#cubes > ul > li .week{
+	display: none;
+}
+
+
+/*begin choose icon by class*/
+	#cubes .weather-rain{
+		background: url(images/cubes/weather-rain.png) 50% 30% no-repeat;
+	}
+
+	#cubes .weather-fog{
+		background: url(images/cubes/weather-fog.png) 50% 30% no-repeat;
+	}
+
+	#cubes .weather-snow{
+		background: url(images/cubes/weather-snow.png) 50% 30% no-repeat;
+	}
+
+	#cubes .weather-sun-with-cloud{
+		background: url(images/cubes/weather-swc.png) 50% 30% no-repeat;
+	}
+
+	#cubes .weather-cwm{
+		background: url(images/cubes/weather-cwm.png) 50% 30% no-repeat;	
+	}
+
+	#cubes .weather-cloud{
+		background: url(images/cubes/weather-cloud.png) 50% 30% no-repeat;	
+	}
+
+/*end choose icon by class*/
+
+
+/*begin coloring by town*/
+	#cubes .town-chicago{
+		background-color: #00c0e2;
+	}
+
+	#cubes .town-seattle{
+		background-color: #5bd998;
+	}
+
+	#cubes .town-brooklyn{
+		background-color: #7558f8
+	}
+
+	#cubes .town-portland{
+		background-color: #e9c14d;
+	}
+
+	#cubes .town-spb{
+		background-color: #e55679;	
+	}
+
+	#cubes .town-san-jose{
+		background-color: #cb70d6;
+	}
+
+/*end coloring by town*/
+
+
+ 
+
+
+
+/* end cubes */
