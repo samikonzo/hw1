@@ -1,3 +1,14 @@
+@font-face{
+	font-family: 'AvenirNext';
+	src: url(fonts/AvenirNext-Bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+
+
 main{
 	width: 100%;
 	height: 600px;
@@ -13,6 +24,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: center; 
+	font-family: AvenirNext;
 }
 
 #cubes > ul {
@@ -68,6 +80,7 @@ main{
 
 #cubes > ul > li:not(.today) .info{
 	left: -100%;
+	background-color: rgba(0,0,0, 1);
 }
 
 #cubes > ul > li .today{
@@ -79,7 +92,8 @@ main{
 	color: white;
 	text-align: center;
 	font-size: 17px;
-
+	background-color: rgba(0,0,0, 0.0);
+	transition: 1s;
 	/*display: none;*/
 }
 
