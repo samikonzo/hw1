@@ -21,6 +21,6 @@ setTimeout( function f(){
 		cubesLis[num].classList.toggle('today');
 	})
 
-	setTimeout(f, 5000);
+	setTimeout(f, 500);
 }, 500)
 

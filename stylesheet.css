@@ -18,7 +18,7 @@ main{
 /*begin cubes*/
 #cubes{
 	width: 800px;
-	margin: 174px auto;
+	margin: auto;
 	background: url(images/cubes/background.gif) no-repeat;
 	position: relative;
 	display: flex;
@@ -161,32 +161,6 @@ main{
 	#cubes .weather-cloud{
 		background: url(images/cubes/weather-cloud.png) 50% 30% no-repeat;	
 	}
-
-	/*
-	#cubes .week .weather-rain{
-		background: url(images/cubes/)
-	}
-
-	#cubes .week .weather-fog{
-		background: url(images/cubes/)
-	}
-
-	#cubes .week .weather-snow{
-		background: url(images/cubes/)
-	}
-
-	#cubes .week .weather-sun-with-cloud{
-		background: url(images/cubes/)
-	}
-
-	#cubes .week .weather-cwm{
-		background: url(images/cubes/)
-	}
-
-	#cubes .week .weather-cloud{
-		background: url(images/cubes/)
-	}
-*/
 
 /*end choose icon by class*/
 
