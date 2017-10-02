@@ -1,2 +1,6 @@
 some bug was fixed in bugFix
+
 new bug fixed in master
+
+new bug fixed in bugFix
+
