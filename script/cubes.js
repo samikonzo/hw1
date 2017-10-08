@@ -1,6 +1,8 @@
 'use strict'
 var l = console.log;
 
+var CHANGE_TIME = 2000;
+
 var cubesLis = document.querySelectorAll('#cubes > ul > li');
 
 
@@ -21,6 +23,6 @@ setTimeout( function f(){
 		cubesLis[num].classList.toggle('today');
 	})
 
-	setTimeout(f, 500);
-}, 500)
+	setTimeout(f, CHANGE_TIME);
+}, CHANGE_TIME)
 
