@@ -8,6 +8,134 @@
 
 
 
+.widget-wrapper-cubes{
+	width: 800px;
+	margin: auto;
+	background: url(images/cubes/background.gif) no-repeat;
+	position: relative;
+}
+.widget-wrapper-cubes--vertical-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+
+
+.cubes{
+	list-style-type: none;
+	font-size: 0;
+	width: 612px;
+	height: 400px;
+	padding: 0;
+	box-shadow: 3px 3px 100px 10px;
+} 
+.cubes--center{
+	margin: auto;
+}
+
+
+.cube{
+	display: inline-block;
+	position: relative;
+	width: 204px;
+	height: 204px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.cube--color-town-chicago{
+	background-color: #00c0e2;
+}
+.cube--color-town-seattle{
+	background-color: #5bd998;
+}
+.cube--color-town-brooklyn{
+	background-color: #7558f8
+}
+.cube--color-town-portland{
+	background-color: #e9c14d;
+}
+.cube--color-town-spb{
+	background-color: #e55679;	
+}
+.cube--color-town-san-jose{
+	background-color: #cb70d6;
+}
+
+.cube__icon{} 
+.cube__icon--weather-rain{}
+.cube__icon--weather-fog{}
+.cube__icon--weather-sun-with-cloud{}
+.cube__icon--weather-snow{}
+.cube__icon--weather-cwm{}
+.cube__icon--weather-cloud{}
+
+.cube__info{} 
+.cube__info--position-today{}
+.cube__info--position-week{}
+.cube__info-today{}
+.cube__info-week-wrapper{}
+.cube__info-week{}
+
+.day{}
+.day__day-name{}
+.day__day-icon{} 
+.day__day-icon{} 
+
+.day__day-icon--weather-rain{}
+.day__day-icon--weather-fog{}
+.day__day-icon--weather-sun-with-cloud{}
+.day__day-icon--weather-snow{}
+.day__day-icon--weather-cwm{}
+.day__day-icon--weather-cloud{}
+.day__day-temp{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main{
 	width: 100%;
@@ -19,7 +147,7 @@ main{
 #cubes{
 	width: 800px;
 	margin: auto;
-	background: url(images/cubes/background.gif) no-repeat;
+	background: url(images/cubes/background.gif) no-repeat cover;
 	position: relative;
 	display: flex;
 	flex-direction: column;
