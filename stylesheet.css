@@ -39,7 +39,6 @@
 	position: relative;
 	width: 204px;
 	height: 204px;
-	border: 1px solid #000;
 	box-sizing: border-box;
 	overflow: hidden;
 }
@@ -62,32 +61,116 @@
 	background-color: #cb70d6;
 }
 
-.cube__icon{} 
-.cube__icon--weather-rain{}
-.cube__icon--weather-fog{}
-.cube__icon--weather-sun-with-cloud{}
-.cube__icon--weather-snow{}
-.cube__icon--weather-cwm{}
-.cube__icon--weather-cloud{}
 
-.cube__info{} 
-.cube__info--position-today{}
-.cube__info--position-week{}
-.cube__info-today{}
-.cube__info-week-wrapper{}
-.cube__info-week{}
+.cube__icon{
+	position: absolute;
+	width: 100%;
+	height:  50%;
+	top:  15%;
+	transition: 1s .5s;
+} 
+.cube__icon--size-small{
+	top: 3%;
+	transition: 1s 0s;
+}
+.cube__icon--weather-rain{
+	background: url(images/cubes/weather-rain.png) 50% 30% no-repeat;
+}
+.cube__icon--weather-fog{
+	background: url(images/cubes/weather-fog.png) 50% 30% no-repeat;
+}
+.cube__icon--weather-sun-with-cloud{
+	background: url(images/cubes/weather-swc.png) 50% 30% no-repeat;
+}
+.cube__icon--weather-snow{
+	background: url(images/cubes/weather-snow.png) 50% 30% no-repeat;
+}
+.cube__icon--weather-cwm{
+	background: url(images/cubes/weather-cwm.png) 50% 30% no-repeat;
+}
+.cube__icon--weather-cloud{
+	background: url(images/cubes/weather-cloud.png) 50% 30% no-repeat;
+}
 
-.day{}
+.cube__info{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 200%;
+	height: 50%;
+
+	font-family: AvenirNext;
+	font-size: 16px;
+	text-transform: uppercase;
+	color:  white;
+	text-align: center;
+	transition: 1s;
+} 
+.cube__info--position-today{
+	left: 0px;
+	transition-delay: 0s;
+}
+.cube__info--position-week{
+	left: -100%;
+	transition-delay: .3s;
+}
+.cube__info-today{
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	line-height: 100px;
+	box-sizing: border-box;
+}
+.cube__info-week-wrapper{
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.2);
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-direction:  column;
+	justify-content:  center;
+}
+.cube__info-week{
+	list-style: none;
+	position: relative;
+	padding: 0;
+	width: 80%;
+	left: 10%;
+	white-space: nowrap;
+}
+
+.day{
+	display: inline-block;
+	width: 25%;
+	font-size: 12px;
+}
 .day__day-name{}
-.day__day-icon{} 
-.day__day-icon{} 
-
-.day__day-icon--weather-rain{}
-.day__day-icon--weather-fog{}
-.day__day-icon--weather-sun-with-cloud{}
-.day__day-icon--weather-snow{}
-.day__day-icon--weather-cwm{}
-.day__day-icon--weather-cloud{}
+.day__day-icon--weather-rain{
+	background: url(images/cubes/weather-rain.png) 50% 30% no-repeat;
+}
+.day__day-icon--weather-fog{
+	background: url(images/cubes/weather-fog.png) 50% 30% no-repeat;
+}
+.day__day-icon--weather-sun-with-cloud{
+	background: url(images/cubes/weather-swc.png) 50% 30% no-repeat;
+}
+.day__day-icon--weather-snow{
+	background: url(images/cubes/weather-snow.png) 50% 30% no-repeat;
+}
+.day__day-icon--weather-cwm{
+	background: url(images/cubes/weather-cwm.png) 50% 30% no-repeat;
+}
+.day__day-icon--weather-cloud{
+	background: url(images/cubes/weather-cloud.png) 50% 30% no-repeat;
+}
+.day__day-icon{
+	height: 20px;
+	background-size: 20px 20px;
+} 
 .day__day-temp{}
 
 
