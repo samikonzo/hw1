@@ -34,7 +34,7 @@ cubes.forEach(cube => {
 })
 
 $('.cube').mouseover(function(e){
-	$('.cube__icon', this).addClass('cube__icon--size-small');
+	$('.cube__icon', this).addClass('cube__icon--position-top');
 	$('.cube__info', this).addClass('cube__info--position-week').removeClass('cube__info--position-today');
 })
 
@@ -44,8 +44,7 @@ $('.cube').mouseout(function(e){
 	if(isParentContainsChild(cube, e.relatedTarget)){
 		return
 	}
-
-	$('.cube__icon', this).removeClass('cube__icon--size-small');
+	$('.cube__icon', this).removeClass('cube__icon--position-top');
 	$('.cube__info', this).removeClass('cube__info--position-week').addClass('cube__info--position-today');
 
 })

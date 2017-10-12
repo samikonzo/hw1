@@ -5,14 +5,20 @@
 	font-style: normal;
 }
 
-
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
 
 
 .widget-wrapper-cubes{
-	width: 800px;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 	background: url(images/cubes/background.gif) no-repeat;
 	position: relative;
+	background-size: cover;
 	cursor: default;
 }
 .widget-wrapper-cubes--vertical-center{
@@ -64,16 +70,18 @@
 
 
 .cube__icon{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height:  50%;
 	top:  15%;
 	transition: 1s .2s;
 } 
-.cube__icon--size-small{
+
+.cube__icon--position-top{
 	top: 3%;
 	transition: 1s 0s;
 }
+
 .cube__icon--weather-rain{
 	background: url(images/cubes/weather-rain.png) 50% 30% no-repeat;
 }
@@ -91,6 +99,10 @@
 }
 .cube__icon--weather-cloud{
 	background: url(images/cubes/weather-cloud.png) 50% 30% no-repeat;
+}
+.cube__icon--size-small{
+	height: 20px;
+	background-size: 20px 20px;
 }
 
 .cube__info{
