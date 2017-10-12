@@ -17,8 +17,8 @@ body{
 	height: 100%;
 	margin: auto;
 	background: url(images/cubes/background.gif) no-repeat;
-	position: relative;
 	background-size: cover;
+	position: absolute;
 	cursor: default;
 }
 .widget-wrapper-cubes--vertical-center{
