@@ -31,10 +31,16 @@ body{
 .cubes{
 	list-style-type: none;
 	font-size: 0;
-	width: 612px;
-	height: 400px;
+	max-width: 612px;
+	/*height: 400px; */
 	padding: 0;
 	box-shadow: 3px 3px 100px 10px;
+
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	-ms-align-items: stretch;
+	align-items: stretch; 
 } 
 .cubes--center{
 	margin: auto;
@@ -48,6 +54,10 @@ body{
 	height: 204px;
 	box-sizing: border-box;
 	overflow: hidden;
+
+	display: flex;
+	flex-flow:  row wrap;
+	justify-content: center;
 }
 .cube--color-town-chicago{
 	background-color: #00c0e2;
@@ -74,7 +84,7 @@ body{
 	width: 100%;
 	height:  50%;
 	top:  15%;
-	transition: 1s .2s;
+	transition: 1s .3s;
 } 
 
 .cube__icon--position-top{
@@ -83,22 +93,22 @@ body{
 }
 
 .cube__icon--weather-rain{
-	background: url(images/cubes/weather-rain.png) 50% 30% no-repeat;
+	background: url(images/cubes/weather-rain.png) 50% no-repeat;
 }
 .cube__icon--weather-fog{
-	background: url(images/cubes/weather-fog.png) 50% 30% no-repeat;
+	background: url(images/cubes/weather-fog.png) 50% no-repeat;
 }
 .cube__icon--weather-sun-with-cloud{
-	background: url(images/cubes/weather-swc.png) 50% 30% no-repeat;
+	background: url(images/cubes/weather-swc.png) 50% no-repeat;
 }
 .cube__icon--weather-snow{
-	background: url(images/cubes/weather-snow.png) 50% 30% no-repeat;
+	background: url(images/cubes/weather-snow.png) 50% no-repeat;
 }
 .cube__icon--weather-cwm{
-	background: url(images/cubes/weather-cwm.png) 50% 30% no-repeat;
+	background: url(images/cubes/weather-cwm.png) 50% no-repeat;
 }
 .cube__icon--weather-cloud{
-	background: url(images/cubes/weather-cloud.png) 50% 30% no-repeat;
+	background: url(images/cubes/weather-cloud.png) 50% no-repeat;
 }
 .cube__icon--size-small{
 	height: 20px;
